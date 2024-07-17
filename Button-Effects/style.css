@@ -1,0 +1,93 @@
+body{
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-button{
+    height: 100vh;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+/* Button View Cart */
+.btn-effect1 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    width: 300px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 0.25rem;
+    background-color: orange;
+    color: #f1f1f1;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.5s;
+    }
+
+.button-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+    background-color: white;
+    border: 1px solid #272829;
+    border-radius: 0.25rem;
+    z-index: -1;
+    }
+
+.button-1:hover {
+   color: #272829;
+}
+
+.button-1:hover::before {
+   width: 100%;
+}
+/* Button view cart*/
+.btn-effect2 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    width: 300px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 0.25rem;
+    background-color: orange;
+    color: #f1f1f1;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.5s;
+    border: #272829;
+    }
+
+.button-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    transition: width 0.3s ease-in-out;
+    background-color: white;
+    border-radius: 0.25rem;
+    z-index: -2;
+    border: 1px solid #272829;
+}
+
+.button-2:hover {
+    color: var(--bg-footer);
+}
+
+.button-2:hover::before {
+    width: 100%;
+}
